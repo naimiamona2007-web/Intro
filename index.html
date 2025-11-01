@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amine | Cyber Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="zet.css" />
+  </head>
+  <body>
+    <!-- الخلفية المتحركة -->
+    <div class="cyber-grid"></div>
+    <div class="floating-shapes"></div>
+    <div class="neon-pulse"></div>
+
+    <!-- المؤشر المخصص -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-trail"></div>
+
+    <!-- الشريط العلوي -->
+    <nav class="cyber-nav">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <div class="logo-orb">
+            <div class="orb-core"></div>
+            <div class="orb-rings">
+              <div class="ring r1"></div>
+              <div class="ring r2"></div>
+              <div class="ring r3"></div>
+            </div>
+          </div>
+          <span class="logo-text">AMINE</span>
+        </div>
+
+        <div class="nav-menu">
+          <a href="#home" class="nav-link active" data-text="HOME">
+            <span class="link-text">HOME</span>
+            <div class="link-glow"></div>
+          </a>
+          <a href="#about" class="nav-link" data-text="ABOUT">
+            <span class="link-text">ABOUT</span>
+            <div class="link-glow"></div>
+          </a>
+          <a href="#skills" class="nav-link" data-text="SKILLS">
+            <span class="link-text">SKILLS</span>
+            <div class="link-glow"></div>
+          </a>
+          <a href="#projects" class="nav-link" data-text="PROJECTS">
+            <span class="link-text">PROJECTS</span>
+            <div class="link-glow"></div>
+          </a>
+          <a href="#contact" class="nav-link" data-text="CONTACT">
+            <span class="link-text">CONTACT</span>
+            <div class="link-glow"></div>
+          </a>
+        </div>
+
+        <div class="nav-controls">
+          <button class="control-btn music-toggle">
+            <i class="fas fa-play"></i>
+            <div class="btn-glow"></div>
+          </button>
+          <button class="control-btn theme-toggle">
+            <i class="fas fa-palette"></i>
+            <div class="btn-glow"></div>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- القسم الرئيسي -->
+    <section id="home" class="hero-section">
+      <div class="hero-container">
+        <!-- الهولوجرام -->
+        <div class="hologram-display">
+          <div class="hologram-platform">
+            <div class="platform-glow"></div>
+            <div class="energy-field"></div>
+          </div>
+          <div class="hologram-content">
+            <img src="pii.jpg" alt="Amine" class="hologram-img" />
+            <div class="scan-lines"></div>
+            <div class="data-stream"></div>
+          </div>
+          <div class="particles-field"></div>
+        </div>
+
+        <!-- المحتوى -->
+        <div class="hero-content">
+          <div class="cyber-terminal">
+            <div class="terminal-header">
+              <div class="terminal-controls">
+                <span class="control-dot red"></span>
+                <span class="control-dot yellow"></span>
+                <span class="control-dot green"></span>
+              </div>
+              <span class="terminal-title">system@amine-dev ~/portfolio</span>
+            </div>
+
+            <div class="terminal-body">
+              <div class="command-line">
+                <span class="prompt">visitor@portfolio:~$</span>
+                <span class="command">whoami</span>
+              </div>
+              <div class="output-line">
+                <span class="output-text">Hello World! I'm</span>
+              </div>
+
+              <h1 class="cyber-title">
+                <span class="title-glitch" data-text="AMINE">AMINE</span>
+              </h1>
+
+              <div class="typing-display">
+                <span class="typed-text"></span>
+                <span class="cursor-blip">█</span>
+              </div>
+
+              <div class="status-display">
+                <span class="status-tag">STATUS:</span>
+                <span class="status-value online">ONLINE & AVAILABLE</span>
+                <div class="status-pulse"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- الإحصائيات -->
+          <div class="stats-panel">
+            <div class="stat-card">
+              <div class="stat-visual">
+                <div class="stat-graph" data-value="27"></div>
+              </div>
+              <div class="stat-info">
+                <div class="stat-number" data-count="27">0</div>
+                <div class="stat-label">PROJECTS BUILT</div>
+              </div>
+              <div class="stat-glow"></div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-visual">
+                <div class="stat-graph" data-value="1"></div>
+              </div>
+              <div class="stat-info">
+                <div class="stat-number" data-count="1">0</div>
+                <div class="stat-label">YEARS CODING</div>
+              </div>
+              <div class="stat-glow"></div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-visual">
+                <div class="stat-graph" data-value="18"></div>
+              </div>
+              <div class="stat-info">
+                <div class="stat-number" data-count="18">0</div>
+                <div class="stat-label">YEARS Old</div>
+              </div>
+              <div class="stat-glow"></div>
+            </div>
+          </div>
+
+          <!-- أزرار التحكم -->
+          <div class="action-panel">
+            <button
+              class="cyber-btn primary"
+              onclick="scrollToSection('projects')"
+            >
+              <span class="btn-icon">🚀</span>
+              <span class="btn-text">EXPLORE WORKS</span>
+              <div class="btn-glow"></div>
+              <div class="btn-particles"></div>
+            </button>
+
+            <button
+              class="cyber-btn secondary"
+              onclick="scrollToSection('contact')"
+            >
+              <span class="btn-icon">💫</span>
+              <span class="btn-text">CONNECT NOW</span>
+              <div class="btn-glow"></div>
+              <div class="btn-particles"></div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- الموجات الصوتية -->
+      <div class="audio-waves">
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+      </div>
+    </section>
+
+    <!-- قسم المهارات -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="title-main">TECH_ARSENAL</span>
+            <span class="title-sub">My Digital Toolkit</span>
+          </h2>
+          <div class="title-underline">
+            <div class="underline-glow"></div>
+          </div>
+        </div>
+
+        <div class="skills-matrix">
+          <div class="skill-orb" data-skill="frontend">
+            <div class="orb-container">
+              <div class="orb-core">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="orb-aura"></div>
+              <div class="orb-ring"></div>
+            </div>
+            <div class="skill-details">
+              <h3>FRONTEND MASTERY</h3>
+              <div class="skill-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Sass</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar">
+                  <div class="level-progress" data-level="95"></div>
+                </div>
+                <span class="level-text">95%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-orb" data-skill="backend">
+            <div class="orb-container">
+              <div class="orb-core">
+                <i class="fas fa-server"></i>
+              </div>
+              <div class="orb-aura"></div>
+              <div class="orb-ring"></div>
+            </div>
+            <div class="skill-details">
+              <h3>BACKEND ENGINE</h3>
+              <div class="skill-tags">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar">
+                  <div class="level-progress" data-level="88"></div>
+                </div>
+                <span class="level-text">88%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-orb" data-skill="mobile">
+            <div class="orb-container">
+              <div class="orb-core">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <div class="orb-aura"></div>
+              <div class="orb-ring"></div>
+            </div>
+            <div class="skill-details">
+              <h3>MOBILE REALM</h3>
+              <div class="skill-tags">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">PWA</span>
+                <span class="tech-tag">Expo</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar">
+                  <div class="level-progress" data-level="82"></div>
+                </div>
+                <span class="level-text">82%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-orb" data-skill="creative">
+            <div class="orb-container">
+              <div class="orb-core">
+                <i class="fas fa-palette"></i>
+              </div>
+              <div class="orb-aura"></div>
+              <div class="orb-ring"></div>
+            </div>
+            <div class="skill-details">
+              <h3>CREATIVE TOOLS</h3>
+              <div class="skill-tags">
+                <span class="tech-tag">Figma</span>
+                <span class="tech-tag">Blender</span>
+                <span class="tech-tag">After Effects</span>
+                <span class="tech-tag">Photoshop</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar">
+                  <div class="level-progress" data-level="78"></div>
+                </div>
+                <span class="level-text">78%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم المشاريع -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="title-main">DIGITAL_CREATIONS</span>
+            <span class="title-sub">My Portfolio Gallery</span>
+          </h2>
+          <div class="title-underline">
+            <div class="underline-glow"></div>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card" data-project="1">
+            <div class="project-visual">
+              <div class="project-image">
+                <img src="project1.jpg" alt="E-Commerce Platform" />
+                <div class="image-overlay">
+                  <div class="overlay-glow"></div>
+                </div>
+              </div>
+              <div class="project-badge">
+                <span class="badge-text">NEW</span>
+                <div class="badge-pulse"></div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">QUANTUM STORE</h3>
+              <p class="project-description">
+                Next-generation e-commerce platform with AI-powered
+                recommendations, real-time analytics, and immersive shopping
+                experience.
+              </p>
+
+              <div class="project-meta">
+                <span class="meta-tag">
+                  <i class="fas fa-calendar"></i>
+                  2025
+                </span>
+                <span class="meta-tag">
+                  <i class="fas fa-code"></i>
+                  Full Stack
+                </span>
+              </div>
+
+              <div class="tech-stack">
+                <span class="tech-item">React</span>
+                <span class="tech-item">Node.js</span>
+                <span class="tech-item">MongoDB</span>
+                <span class="tech-item">AI/ML</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="#" class="action-btn live-demo">
+                  <i class="fas fa-rocket"></i>
+                  LIVE DEMO
+                </a>
+                <a
+                  href="https://discord.gg/nHghyeZZ"
+                  class="action-btn source-code"
+                >
+                  <i class="fab fa-discord"></i>
+                  SOURCE
+                </a>
+              </div>
+            </div>
+
+            <div class="project-glow"></div>
+          </div>
+
+          <!-- يمكن إضافة المزيد من المشاريع هنا -->
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="title-main">CONNECT_MATRIX</span>
+            <span class="title-sub">Let's Build Together</span>
+          </h2>
+          <div class="title-underline">
+            <div class="underline-glow"></div>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-terminal">
+            <div class="terminal-header">
+              <span class="terminal-title">contact_protocol.init</span>
+            </div>
+            <div class="terminal-body">
+              <div class="contact-node" data-platform="discord">
+                <div class="node-icon">
+                  <i class="fab fa-discord"></i>
+                </div>
+                <div class="node-info">
+                  <h4>Crespo !!</h4>
+                  <p>Join our development community</p>
+                </div>
+                <div class="node-glow"></div>
+              </div>
+
+              <div class="contact-node" data-platform="facebook">
+                <div class="node-icon">
+                  <i class="fab fa-facebook"></i>
+                </div>
+                <div class="node-info">
+                  <h4>Amine naimi</h4>
+                  <p>Explore my open-source projects</p>
+                </div>
+                <div class="node-glow"></div>
+              </div>
+
+              <div class="contact-node" data-platform="Instagram">
+                <div class="node-icon">
+                  <i class="fab fa-instagram"></i>
+                </div>
+                <div class="node-info">
+                  <h4>amiine_naimi</h4>
+                  <p>Connect professionally</p>
+                </div>
+                <div class="node-glow"></div>
+              </div>
+
+              <div class="contact-node" data-platform="email">
+                <div class="node-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="node-info">
+                  <h4>EMAIL DIRECT</h4>
+                  <p>Naimiamona2007@gmail.com</p>
+                </div>
+                <div class="node-glow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="cyber-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-globe">
+            <div class="globe-sphere"></div>
+            <div class="globe-marker">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>TUNISIA</span>
+            </div>
+          </div>
+
+          <div class="footer-text">
+            <p>&copy; 2025 AMINE - DIGITAL ARCHITECT</p>
+            <p>BUILT WITH ⚡ CYBER ENERGY</p>
+          </div>
+
+          <div class="footer-particles"></div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- الموسيقى -->
+    <audio id="bg-music" loop>
+      <source
+        src="Travis Scott   WHO WHAT! (Audio)-Travis Scott-1762015217815.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <script src="zet.js"></script>
+  </body>
+</html>
